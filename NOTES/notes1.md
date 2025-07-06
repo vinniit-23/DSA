@@ -1,6 +1,6 @@
 # DSA Notes
 
-# WHAT IS DSA ?
+# WHAT IS DSA?
 
 DSA stands for Data Structures and Algorithms. 
 
@@ -40,7 +40,27 @@ DSA stands for Data Structures and Algorithms.
 - **Disjoint Set (Union-Find) :** Tracks Connected Components
 - **Adjacency List / Matrix :** Ways to store graphs <br> </br>
 
-**What is an Algorithms ?**
+# What is an Algorithm?
+An Algorithm is a step-by-step procedure or formula for solving a problem or performing a task.
+- **Types of Algorithms:**
+  - **Searching Algorithms:** Find specific data within a structure (e.g., Binary Search).
+  - **Sorting Algorithms:** Organize data in a specific order (e.g., Quick Sort, Merge Sort).
+  - **Recursion:** Functions that call themselves to solve problems (e.g., Factorial, Fibonacci).
+  - **Dynamic Programming:** Break down problems into simpler subproblems (e.g., Fibonacci, Knapsack).
+  - **Graph Algorithms:** Solve problems related to graphs (e.g., Dijkstra's, BFS, DFS).
+  - **Greedy Algorithms:** Make locally optimal choices at each step (e.g., Coin Change).
+  - **Backtracking:** Explore all possibilities to find a solution (e.g., N-Queens, Sudoku Solver).
+  - **Divide and Conquer:** Break problems into smaller subproblems (e.g., Merge Sort, Quick Sort).
+  - **Bit Manipulation:** Use bitwise operations to solve problems (e.g., Counting set bits, Power of two).
+  - **Mathematical Algorithms:** Solve mathematical problems (e.g., GCD, LCM, Prime Factorization).
+  - **String Algorithms:** Solve problems related to strings (e.g., KMP, Rabin-Karp).
+
+
+
+
+
+
+
 
 
 
