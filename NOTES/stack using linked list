@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h> // For INT_MIN
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+// Returns 1 if empty, 0 otherwise
+int isEmpty(struct Node* head) {
+    return head == NULL;
+}
+
+void push(struct Node** head, int new_data) {
+    struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
+    if (!new_node) {
+        printf("Memory allocation failed\n");
+        exit(1);
+    }
+    new_node->data = new_data;
+    // assign value of old head to new head
+    new_node->next = *head;
+    // change value of old head to new head
+    *head = new_node;
+}
+
+void pop(struct Node** head) {
+    if (isEmpty(*head)) {
+        printf("Stack is empty, cannot pop\n");
+        return;
+    }
+    struct Node* temp = *head;
+    *head = (*head)->next;
+    free(temp);
+}
+
+int peek(struct Node* head) {
+    if (isEmpty(head)) {
+        printf("Stack is empty, cannot peek\n");
+        return INT_MIN;
+    }
+    return head->data;
+}
+
+int main() {
+    struct Node* head = NULL;
+    int num;
+ 
+    printf("Enter number to add on stack: ");
+    scanf("%d", &num);
+    push(&head, num);
+    // push(&head, 11);
+    // push(&head, 22);
+    // push(&head, 33);
+    // push(&head, 44);
+
+    printf("Top element: %d\n", peek(head));
+
+    // pop(&head);
+    // pop(&head);
+
+    // printf("Top element after popping two elements: %d\n", peek(head));
+
+    return 0;
+}
