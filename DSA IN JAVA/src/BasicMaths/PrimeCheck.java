@@ -11,7 +11,7 @@ for (int i = 2;i*i<=num;i++){
     }
 
     static void main() {
-        boolean primeCheck = PrimeCheck(10);
+        boolean primeCheck = PrimeCheck(89);
         if (primeCheck){
             System.out.println("given is a prime");
         }else{
