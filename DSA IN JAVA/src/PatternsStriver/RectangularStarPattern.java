@@ -1,4 +1,4 @@
-package Patterns;
+package PatternsStriver;
 
 import java.util.Scanner;
 
@@ -7,9 +7,9 @@ public class RectangularStarPattern {
         Scanner scan = new Scanner(System.in);
         System.out.println("enter number of rows you want to print");
         int Num = scan.nextInt();
-        for (int i = 0; i <Num ; i++) {
-            for (int j = 0; j < Num; j++) {
-                System.out.print("X ");
+        for (int row = 0; row <Num ; row++) {
+            for (int col = 0; col < Num; col++) {
+                System.out.print("* ");
             }
             System.out.println();
         }
