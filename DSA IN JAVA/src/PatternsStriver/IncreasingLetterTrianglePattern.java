@@ -9,13 +9,13 @@ public class IncreasingLetterTrianglePattern {
         int n = scan.nextInt();
 
         for (int row = 1; row <=n ; row++) {
-            for (int col = 1; col <=row ; col++) {
-        int a =col;
-        int b = ('A'-1);
-        int alpha = a+b;
-        char finalans = (char)alpha;
+            for ( char col = 'A'; col <='A'+row-1 ; col++) {
+//        int a =col;
+//        int b = ('A'-1);
+//        int alpha = a+b;
+//        char finalans = (char)alpha;
 
-                System.out.print(finalans+" ");
+                System.out.print(col+" ");
             }
             System.out.println();
         }
