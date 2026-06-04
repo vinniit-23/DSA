@@ -11,6 +11,9 @@
 > Make notes of basic maths and patterns 
 > Start Java Collection frame
 
+**DATE:- 4 June 2026**
+>  Bitwise operator Homework question 2,3,4,6 is pending
+
 
 <br>
 <br>
