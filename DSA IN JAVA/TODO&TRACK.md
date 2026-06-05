@@ -14,6 +14,8 @@
 **DATE:- 4 June 2026**
 >  Bitwise operator Homework question 2,3,4,6 is pending
 
+**DATE:- 6 June 2026**
+>  We will start arrays
 
 <br>
 <br>
