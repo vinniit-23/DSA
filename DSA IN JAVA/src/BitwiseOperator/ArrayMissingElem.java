@@ -8,8 +8,7 @@ public class ArrayMissingElem {
         int xor=0;
         int xor1=0;
         int xor2=0;
-
-//        for (int i=0;i<= arr.length;i++){
+ //        for (int i=0;i<= arr.length;i++){
 //            newarr[i]= (i+1);
      //        System.out.println(newarr[i]);
 //        }
