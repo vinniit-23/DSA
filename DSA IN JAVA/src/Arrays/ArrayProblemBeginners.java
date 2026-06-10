@@ -1,5 +1,8 @@
 package Arrays;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class ArrayProblemBeginners {
 
 
@@ -137,6 +140,24 @@ static int UnsortElement(int [] arr){
     }
 
 
+    static void arrayIntersection(int [] arr1,int[] arr2){
+        Set<Integer> Intersection = new HashSet<>();
+         for (int i = 0; i < arr1.length ; i++) {
+             int a=arr1[i];
+             int b=arr2[i];
+            if (a==b){
+                System.out.println(a);
+                Intersection.add(a);
+            }
+        }
+
+         for(int j:Intersection){
+             System.out.println(j);
+         }
+
+     }
+
+
     static int [] SwapAlternateElem(int [] arr){
         int n = arr.length;
         int [] newArr = new int [n];
@@ -158,10 +179,10 @@ static int UnsortElement(int [] arr){
 static void main() {
     int [] arr={1,2,3,4,5,6};
 //    System.out.println(UnsortElement(arr));
-int [] newSwapElemArr = SwapElementArray(arr);
- for(int j:newSwapElemArr){
-     System.out.println(j);
- }
+//int [] newSwapElemArr = SwapElementArray(arr);
+// for(int j:newSwapElemArr){
+//     System.out.println(j);
+// }
 
 //    int []  swapAlternateElem = SwapAlternateElem(arr);
 //    for(int i:swapAlternateElem){
@@ -177,7 +198,8 @@ int [] newSwapElemArr = SwapElementArray(arr);
 //        System.out.println(newArr[i]);
 //    }
 
-//    int [] SumArr={-1,2,-3,4,-5,6};
+    int [] SumArr={-1,2,-3,4,-5,6};
+ arrayIntersection(arr,SumArr);
 //int[] SumNewArr= SumOfPositiveAndNegative(SumArr);
 //    System.out.println("Sum of positive element: "+SumNewArr[0]+" Sum Of Negative Element: "+SumNewArr[1]);
 //
