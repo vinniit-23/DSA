@@ -2,6 +2,8 @@ package Arrays;
 
 import javax.xml.transform.Source;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ArrayManipulationProblem {
     static void ReverseArray(int [] arr){
@@ -90,11 +92,66 @@ public class ArrayManipulationProblem {
 
 
 
+    static void UnionOfArray(int[] arr1,int[] arr2){
+        Set<Integer> Union = new HashSet<>();
+        for(int i:arr1){
+            Union.add(i);
+        }
+        for(int j:arr2){
+            Union.add(j);
+        }
+
+        for(int i:Union){
+            System.out.println(i);
+        }
+
+     }
+
+
+
+    static void shiftArrayBy_KPosition(int [] arr,int k){
+        int n= arr.length;
+        int [] NArr = new int[k];
+        int j=n-k;
+
+        for (int i = 0; i <k ; i++) {
+            NArr[i]=arr[i+j];
+        }
+
+        for (int i = n-1; i >=k ; i--) {
+            arr[i] = arr[i-k];
+        }
+
+        for (int i = 0; i < k; i++) {
+            arr[i]=NArr[i];
+        }
+
+        for(int l:arr){
+            System.out.print(l+" ");
+        }
+    }
+
+
+
+
+
+
+
+
+
     static void main() {
-        int [] arr={1,2,3,4,5,5,6,6,6,6,6,6,6};
-        int [] newArr =HighestAndLowestFreq(arr);
-             System.out.println("HigestFreq "+newArr[0]);
-             System.out.println("LowestFre "+newArr[1]);
+//        int [] arr={1,2,3,4,5,5,6,6,6,6,6,6,6};
+        int [] arr1={1,2,3};
+        int [] arr2={2,3,4,5,6};
+        UnionOfArray(arr1,arr2);
+//        shiftArrayBy_KPosition(arr1,5);
+////        int [] newArr =HighestAndLowestFreq(arr);
+//        int [] newArr1 =UnionOfArray(arr1,arr2);
+//        for(int i:newArr1){
+//            System.out.println(i);
+//        }
+//             System.out.println("HigestFreq "+newArr[0]);
+//             System.out.println("LowestFre "+newArr[1]);
  //        int mode = ModeOfArray(arr);
 //        System.out.println(mode);
 //        ReverseArray(arr);
