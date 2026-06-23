@@ -9,15 +9,15 @@ public class HalfDiamondStarPattern {
         int n = scan.nextInt();
 
 //        upper right angle triangle
-        for (int row = 1; row <=n ; row++) {
-            for (int col = 1; col <=row ; col++) {
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= row; col++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
 //        Lower Right angle triangle
-        for (int row = 1; row <=n ; row++) {
-            for (int col = 1; col <=n-row ; col++) {
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= n - row; col++) {
                 System.out.print("* ");
             }
             System.out.println();
