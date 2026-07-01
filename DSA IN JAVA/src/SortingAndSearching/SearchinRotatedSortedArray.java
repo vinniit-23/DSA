@@ -21,6 +21,32 @@ public class SearchinRotatedSortedArray {
         }
         return ans;
     }
+    static int pivotIndex1(int[] nums){
+        int n = nums.length;
+        int start = 0;
+        int end = n-1;
+        int ans=-1;
+        if(nums[0]<nums[n-1]) {
+            return ans;
+        }
+
+        while(start<=end){
+            int mid = start+(end-start)/2;
+            if(nums[mid]>nums[mid+1]){
+                ans=mid;
+                end = mid-1;
+            }else{
+                start = mid+1;
+            }
+        }
+        return ans;
+//        Getting this error In this code
+//        Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 8
+//	at SortingAndSearching.SearchinRotatedSortedArray.pivotIndex1(SearchinRotatedSortedArray.java:35)
+//	at SortingAndSearching.SearchinRotatedSortedArray.main(SearchinRotatedSortedArray.java:96)
+//
+//Process finished with exit code 1
+    }
 
     static int binarySearch(int[] nums,int target,int start,int end){
 //        int n= nums.length;
@@ -70,11 +96,11 @@ public class SearchinRotatedSortedArray {
     }
 
     static void main() {
-int [] nums = {4,5,6,7,0,1,2};
+int [] nums = {4,5,6,7,8,0,1,2,};
         int n= nums.length;
 
-//        System.out.println(pivotIndex(nums));
+        System.out.println(pivotIndex1(nums));
 //        System.out.println(binarySearch(nums,0,0,n-1));
-        System.out.println(search(nums,0));
+//        System.out.println(search(nums,0));
     }
 }
